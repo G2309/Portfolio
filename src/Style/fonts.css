@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Hack Regular';
+    src: url('/fonts/HackNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Hack Bold';
+    src: url('/fonts/HackNerdFont-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Hack Italic';
+    src: url('/fonts/FiraCodeNerdFont-Italic.ttf') format('truetype');
+    font-weight: italic;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Hack Regular', sans-serif;
+}
+
+h1 {
+    font-family: 'Hack Bold', sans-serif;
+}
+
