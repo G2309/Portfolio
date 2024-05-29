@@ -1,0 +1,9 @@
+/* Paleta de color basada en: https://www.colorhunt.co/palette/2d27274135438f43eef0eb8d */
+
+:root {
+	--background: #262121;
+	--background-alt: #3D3240;
+	--border: #A47ABF;
+	--focus: #8D44F2;
+	--text: #F2EC91;
+}

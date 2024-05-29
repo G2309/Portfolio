@@ -1,3 +1,5 @@
+@import './palette.css';
+
 @font-face {
     font-family: 'Hack Regular';
     src: url('/fonts/HackNerdFont-Regular.ttf') format('truetype');
@@ -21,12 +23,16 @@
     font-style: normal;
 }
 
+.body-regular-color {
+    font-family: 'Hack Regular', sans-serif;
+    color: var(--text);
+}
 
-body {
+.body-regular {
     font-family: 'Hack Regular', sans-serif;
 }
 
-h1 {
+.h1-bold {
     font-family: 'Hack Bold', sans-serif;
 }
 
