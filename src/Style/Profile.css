@@ -1,0 +1,108 @@
+@import 'palette.css';
+@import 'fonts.css';
+
+.profile {
+	display:flex;
+	width:100vw;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+}
+
+.blobs {
+	position:absolute;
+	width:100%;
+	height:100%;
+	justify-content:center;
+	align-items:center;
+	top:35%;
+	left:50%;
+}
+
+.circle {
+	background:none;
+	border-width:3px;
+	border-style:solid;
+	width:8rem;
+	height:5rem;
+	border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+	overflow:hidden;
+	position:absolute;
+	animation: morph 4s linear infinite, scaleIn 15s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+
+}
+
+.d1 {
+	opacity: 0.5;
+  	border-color: red;
+  	border-width: 1px;
+	left:-20%;
+	top:-10%;
+}
+
+.d2 {
+  	opacity: 1;
+  	border-color: green;
+  	border-width: 1px;
+	left:20%;
+	top:20%;
+}
+
+.d3 {
+  	opacity: 0.7;
+  	border-color: yellow;
+  	border-width: 1px;
+	left:20%;
+	top:-10%;
+}
+
+.d4 {
+  	opacity: 0.9;
+  	border-color: purple;
+  	border-width: 1px;
+	left:-20%;
+	top:20%;
+}
+
+@keyframes morph {
+	0%, 100% {
+		border-radius: 40% 70% 80% 30% / 40% 40% 60% 50%;
+  	}
+  	34% {
+    		border-radius: 65% 30% 60% 50% / 30% 30% 70% 70%;
+ 	 }
+  	67% {
+    		border-radius: 100% 70% 50% 100% / 100% 100% 60% 60%;
+  	}
+}
+
+@keyframes scaleIn {
+	0% {
+		transform: scale(0.25, 0.25);
+  	}
+  	50% {
+    		transform: scale(4.5, 4.5);
+  	}
+	100% {
+    		transform: scale(1.0, 1.0);
+	}
+}
+
+.card {
+	position:relative;
+	width:80vw;
+	height:70vh;
+	border-radius:1rem;
+	border: 1px solid var(--background-alt);
+	box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+	background-color: rgba(0,0,0,0,0.5);
+	backdrop-filter:blur(10px);
+}
+
+.foto-cont1 {
+	border-radius:52% 48% 83% 17% / 38% 55% 45% 62%  ;
+	border:solid var(--hover);
+	background-color:transparent;
+	width:5rem;
+	heigth:5rem;
+}

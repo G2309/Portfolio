@@ -15,11 +15,17 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Hack Italic';
-    src: url('/fonts/FiraCodeNerdFont-Italic.ttf') format('truetype');
+    src: url('/fonts/HackNerdFont-Italic.ttf') format('truetype');
     font-weight: italic;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gohu';
+    src: url('/fonts/GohuFont14NerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -34,5 +40,9 @@
 
 .h1-bold {
     font-family: 'Hack Bold', sans-serif;
+}
+
+.body-terminal {
+    font-family: 'Gohu', sans-serif;
 }
 
