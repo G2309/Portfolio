@@ -1,0 +1,56 @@
+.pantalla-tres {
+  width:70vw;
+  height:70vh;
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.carrusel {
+  margin-top: 20px;
+}
+
+.contenedor-carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elemento-carrusel {
+  padding: 10px;
+}
+
+.vista-previa {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.vista-previa:hover {
+  transform: scale(1.05);
+}
+
+.vista-previa img {
+  width: 100%;
+  height: auto;
+}
+
+.descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.vista-previa:hover .descripcion {
+  opacity: 1;
+}
+

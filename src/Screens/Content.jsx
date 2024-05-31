@@ -7,7 +7,7 @@ import SkillsSec from './SkillsSec'
 import Screen3 from './Screen3'
 import Projects from './Projects'
 
-const screens = [[<Profile/>,<ProfileTer/>],[<Skills/>,<SkillsSec/>], [<Screen3/>,<Projects/>]]
+const screens = [[<Profile/>,<ProfileTer/>],[<Skills/>,<ProfileTer/>], [<Screen3/>,<ProfileTer/>]]
 
 const Content = () => {
 	const [screen, setScreen] = useState(0)

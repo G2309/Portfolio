@@ -59,6 +59,7 @@
   background-color: var(--background-alt);
   transform: rotateY(180deg);
   display: flex;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
   font-size:2rem;
@@ -95,3 +96,8 @@
   z-index: 1;
 }
 
+.progress-b {
+	width:7rem;
+	height:7rem;
+	margin-bottom:1.5rem;
+}

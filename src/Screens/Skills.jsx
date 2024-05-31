@@ -1,5 +1,5 @@
 import '../Style/Skills.css'
-import { CircularProgressbar } from 'react-circular-progressbar'
+import { CircularProgressbar,buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
 
 const Skills = () => {
@@ -13,18 +13,33 @@ const Skills = () => {
 		{name:'PostgreSQL',icon:'',effiency:85},
 		{name:'Neo4j',icon:'',effiency:70},
 	]
+
+	const CircularStyle = buildStyles({
+  		rotation: 0.25,
+  		strokeLinecap: 'round',
+  		textSize: '16px',
+  		pathTransitionDuration: 0.5,
+  		pathColor: `var(--focus)`,
+  		textColor: 'var(--text)',
+  		trailColor: '#d6d6d6',
+		valueAnimation:true,
+		loadingTime: 1000,
+	})
+
 	return (
-		<div className="skills">
-      		 <div className="skills-container">
+		<div className='skills'>
+      		 <div className='skills-container'>
        	 	 {skills.map((skill, index) => (
-          	  <div className="card-skill" key={index}>
-            	   <div className="card-inner">
-              	    <div className="card-front">
+          	  <div className='card-skill' key={index}>
+            	   <div className='card-inner'>
+              	    <div className='card-front'>
                      <span className="icon">{skill.icon}</span>
               	    </div>
-                   <div className="card-back">
-		    <CircularProgressbar value={skill.effiency} text={`${skill.effiency}%`}/>
-		    <span className='body-percent'>{skill.name}</span>
+                   <div className='card-back'>
+		     <div className='progress-b'>
+		      <CircularProgressbar styles={CircularStyle} value={skill.effiency} text={`${skill.effiency}%`}/>
+		     </div>
+		     <span className='body-percent'>{skill.name}</span>
                    </div>
             	  </div>
                  </div>
