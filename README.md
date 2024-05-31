@@ -25,8 +25,6 @@ En la creación de mi portafolio, utilicé varias tecnologías. A continuación,
 El portafolio se ejecuta en servidores tanto de GitHub Pages como de Netlify, asegurando redundancia y disponibilidad en múltiples plataformas. El sitio presenta mi información de contacto, un resumen de mis conocimientos en programación, y una galería de proyectos en los que he trabajado, cada uno con descripciones detalladas, imágenes y enlaces a los repositorios de código correspondientes. 
 
 ### Paleta de Colores
-La paleta de colores utilizada en el diseño del portafolio es crucial para crear una experiencia visualmente atractiva y coherente. A continuación, detallo el propósito de cada color en la paleta:
-
 ![Paleta de colores](./public/Palette.png)
 
 - **--background: #262121;**
@@ -44,5 +42,46 @@ La paleta de colores utilizada en el diseño del portafolio es crucial para crea
 - **--text: #F2EC91;**
   Este color claro se utiliza para el texto principal, creando un contraste claro y legible contra el fondo oscuro. La elección de un color de texto suave reduce la tensión visual y mejora la experiencia de lectura prolongada.
 
-La combinación de estos colores crea una experiencia visual armónica y profesional, asegurando que el contenido del portafolio sea accesible y atractivo para los usuarios.
+## Tutorial de navegación en el portafolio
+Para navegar por el portafolio puedes usar las flechas en pantalla, para ir a las diferentes pantallas que realice. Adicionalmente, puedes usar tu teclado, con las mismas flechas para hacer cada accion. 
 
+Además se incluyeron algunos datos en la barra izquierda que contiene mi información de contacto. Puedes hacer click para interactuar con la información.
+
+
+## Tutorial de la terminal integrada
+
+El proyecto implentó una terminal simple donde se detalla **Tecnologías vistas en clase** y los **Pensamientos que tuve al usar las tecnologias**. Asi como amplia la informacion de mi perfil, quien soy, cuales son mis hobbies, que estudio. Sin embargo detallaré como utilizar la terminal:
+
+- **Primeros pasos**
+    Los primeros pasos en la terminal consisten en: Primero debes saber que para escribir, el cursor hace un auto focus, y te situa justo donde hay una entrada de texto. Si pierdes el cursor, situa el mouse a la derecha del símbolo **$** y comenzarás a escribir.
+    Si deseas conocer que comandos usar, empieza con **-h**, y su funcionamiento sera similar al de linux.
+
+- **Comando: ls**
+    Imprime todos los archivos de texto disponibles en el directorio actual 
+    **Uso:**
+
+    ```sh 
+    ls
+
+- **Comando: cat**
+    Imprime el contenido de los archivos disponibles, puede usar uno o varios archivos a la vez.
+    **Uso: **
+
+    ```sh
+    cat aboutme.txt
+
+- **Comando: clear**
+    Borra todo lo que hay en la terminal, esto despeja todas las palabras.
+    **Uso:**
+
+    ```sh
+    clear
+
+    Opcionalmente puedes hacer un CTRL+L para recargar.
+
+- **Comando: -h**
+    Brinda informacion de los comandos disponibles.
+    **Uso:**
+
+    ```sh
+    -h
