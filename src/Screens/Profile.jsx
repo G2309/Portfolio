@@ -1,4 +1,6 @@
 import '../Style/Profile.css';
+import foto from './foto.png'
+import { Typewriter, Cursor } from 'react-simple-typewriter'
 
 const Profile = () => {
 	return(
@@ -14,7 +16,39 @@ const Profile = () => {
 		  <div className='circle d4' style={{animationDelay: '-18s'}}></div>
 		 </div>
 		 <div className='card'>
-		  <div className='foto-cont'></div>
+		  <div className='foto-cont'>
+		    <img src={foto}/>
+		  </div>
+		  <div className='info'>
+		    <h1 className='name'>
+		    <Typewriter 
+		        words={['Gustavo Cruz']}
+		        loop={1}
+			typeSpeed={55}
+			delaySpeed={5000}
+		    />
+		    </h1>
+		    <h2 className='title'>
+		    <Typewriter 
+		        words={['Estudiante de Ciencias de la Computación y Tecnologías de la Información']}
+		        loop={1}
+			typeSpeed={55}
+			cursor
+			cursorStyle={'_'}
+			delaySpeed={7000}
+		    />
+		    </h2>
+		    <p className='description'>
+		    <Typewriter 
+		        words={['Soy Gustavo Cruz, un estudiante de CC y TI. Mi objetivo es dominar el campo de la programación y ampliar continuamente mis conocimientos en este mundo de la tecnología.']}
+		        loop={1}
+			typeSpeed={55}
+			cursor
+			cursorStyle={'_'}
+			delaySpeed={7000}
+		    />
+		    </p>
+		  </div>
 		 </div>
 		</div>
 	)

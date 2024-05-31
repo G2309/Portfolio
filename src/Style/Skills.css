@@ -1,0 +1,97 @@
+@import 'palette.css';
+@import 'fonts.css';
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - var(--navbar-height));
+  background-color: var(--background);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card-skill {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-skill:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: var(--background-alt);
+}
+
+.card-front {
+  font-size:5rem;
+  color: var(--text);
+}
+
+.card-back {
+  background-color: var(--background-alt);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:2rem;
+  color: var(--text);
+}
+
+.cir {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cir::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(var(--proficiency) - 10%);
+  height: calc(var(--proficiency) - 10%);
+  background-color: var(--hover);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.cir span {
+  font-family: 'Hack Regular', sans-serif;
+  color: white;
+  z-index: 1;
+}
+
