@@ -5,6 +5,9 @@ import '../Style/Screen3.css'
 import img1 from '/img1.png'
 import img2 from '/img2.png'
 import img3 from '/img3.png'
+import img4 from '/img4.png'
+import img5 from '/img5.png'
+import img6 from '/img6.png'
 
 const proyectos = [
   {
@@ -27,15 +30,21 @@ const proyectos = [
   },
   {
     id: 4,
-    imagen: img2,
-    descripcion: 'Laboratorio donde el objetivo era hacer una imagen a partir de CSS, sin utilizar otro lenguaje, y apoyandonos de HTML para la estructura del CSS',
-    link: 'http://3.134.217.203/css_only/'
+    imagen: img4,
+    descripcion: 'Laboratorio donde se realizo un backend para lo que seria el futuro proyecto 1. Se utilizó express y postman para corroborar funcionamiento',
+    link: 'https://github.com/G2309/lab06-SW'
   },
   {
     id: 5,
-    imagen: img2,
-    descripcion: 'Laboratorio donde el objetivo era hacer una imagen a partir de CSS, sin utilizar otro lenguaje, y apoyandonos de HTML para la estructura del CSS',
-    link: 'http://3.134.217.203/css_only/'
+    imagen: img5,
+    descripcion: 'Laboratorio donde se consumia el API creado en el Lab06, y se hacia un front end para mostrar los datos almacenados en la base de datos mysql. Se utilizó react y babel por medio de CDN',
+    link: 'https://github.com/G2309/lab07-SW'
+  },
+  {
+    id: 6,
+    imagen: img6,
+    descripcion: 'Primer Proyecto. Se utilizo react para llevar a cabo el front end del proyecto. Ademas se hizo un deploy tanto del front end (Netlify) como del backend (Render)',
+    link: 'https://22779-gustavo.netlify.app/'
   },
 ]
 
