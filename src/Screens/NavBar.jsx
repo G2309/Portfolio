@@ -5,7 +5,7 @@ const NavBar = () => {
 		<div className='navbar'>
       	 	 <div className='nav-box'>
           	  <div className='nav-item'>
-            	   <a href="https://github.com/G2309" data-label='Github'>󰊢</a>
+            	   <a href="https://github.com/G2309" data-label='Github'></a>
           	  </div>
         	 </div>
       		 <div className='nav-box'>
