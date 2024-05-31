@@ -3,9 +3,7 @@ import {useState, useEffect} from 'react'
 import Profile from './Profile'
 import ProfileTer from './ProfileTer'
 import Skills from './Skills'
-import SkillsSec from './SkillsSec'
 import Screen3 from './Screen3'
-import Projects from './Projects'
 
 const screens = [[<Profile/>,<ProfileTer/>],[<Skills/>,<ProfileTer/>], [<Screen3/>,<ProfileTer/>]]
 
